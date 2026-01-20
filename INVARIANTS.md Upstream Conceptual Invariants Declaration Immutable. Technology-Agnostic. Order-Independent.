@@ -1,0 +1,189 @@
+# INVARIANTS.md
+Upstream Conceptual Invariants Declaration
+Immutable. Technology-Agnostic. Order-Independent.
+
+====================================================================
+
+PURPOSE
+
+This document defines the non-negotiable conceptual invariants governing
+the ideas, systems, and frameworks originating from this repository.
+
+These invariants describe properties that must remain true across all
+implementations, adaptations, optimizations, substitutions, or derivative
+works—regardless of technology, medium, era, or execution environment.
+
+If an implementation preserves these invariants, it operates within the
+conceptual territory defined here.
+
+If an implementation violates or removes any invariant, it exits that
+territory entirely.
+
+====================================================================
+
+SCOPE
+
+These invariants apply to, but are not limited to:
+
+- Authentication systems
+- Identity systems
+- Security primitives
+- Interaction-based verification mechanisms
+- Dynamic input or challenge systems
+- Any system claiming resistance to replay, observation, or static capture
+
+No specific technology is required or assumed.
+
+Technologies are replaceable.
+Invariants are not.
+
+====================================================================
+
+INVARIANT 1 — NON-REPLAYABILITY
+
+A valid interaction, credential, or authentication outcome cannot be replayed
+to produce the same result.
+
+- No static recording (video, audio, memory, data capture, transcript)
+  may be reused successfully.
+- Validity arises from conditions that cannot be identically reproduced.
+
+Any system allowing successful replay violates this invariant.
+
+====================================================================
+
+INVARIANT 2 — DYNAMIC INPUT SPACE
+
+The effective input space is not fixed.
+
+- Inputs may change over time, state, context, ordering, or interaction.
+- Symbols, representations, or interfaces may shift, rotate, mutate, or
+  re-express without repeating deterministically.
+- The user does not interact with a static keyboard, static sequence,
+  or static symbol map.
+
+Static input systems violate this invariant.
+
+====================================================================
+
+INVARIANT 3 — OBSERVATION RESISTANCE
+
+Observation does not meaningfully reduce system security.
+
+- Watching a valid interaction does not enable reconstruction.
+- Recording a valid interaction does not enable reproduction.
+- Exposure does not provide deterministic advantage.
+
+This applies equally to:
+- Human observers
+- Automated systems
+- Machine learning models
+- Computational or quantum analysis
+
+If observation materially improves success probability, this invariant
+is violated.
+
+====================================================================
+
+INVARIANT 4 — STATE-DEPENDENT VALIDITY
+
+Validity depends on live state, not pre-existing knowledge.
+
+- Correctness cannot be established solely by knowing "the answer".
+- Validity emerges from interaction with current system state.
+- Past correctness does not guarantee future correctness.
+
+Systems based on memorization alone violate this invariant.
+
+====================================================================
+
+INVARIANT 5 — IMPLEMENTATION INDEPENDENCE
+
+No specific implementation detail is required to satisfy these invariants.
+
+- Cryptographic primitives are optional.
+- Tokens (including NFTs) are optional.
+- Hardware devices are optional.
+- Network connectivity is optional.
+- Any specific protocol is optional.
+
+Substituting technologies does not escape these invariants if the
+conceptual properties remain intact.
+
+====================================================================
+
+INVARIANT 6 — NON-EXHAUSTIBILITY
+
+The interaction space cannot be exhaustively enumerated in advance.
+
+- Brute force enumeration is infeasible by design.
+- Precomputation does not collapse future validity.
+- The possibility space does not converge.
+
+Any system whose space can be fully rolled out or precomputed violates
+this invariant.
+
+====================================================================
+
+INVARIANT 7 — UPSTREAM / DOWNSTREAM SEPARATION
+
+This repository defines conceptual territory, not execution.
+
+- Downstream implementations may vary.
+- Performance, UX, cost, and embodiment are downstream concerns.
+- Authority over invariants remains upstream.
+
+No downstream implementation may redefine these invariants without
+exiting the defined conceptual space.
+
+====================================================================
+
+INVARIANT 8 — MODIFICATION NON-ESCAPE
+
+Partial modification does not negate applicability.
+
+- Changing symbols does not escape invariants.
+- Changing representations does not escape invariants.
+- Changing percentages, parameters, or surface features does not escape
+  invariants.
+
+A modification that preserves invariant behavior remains within scope.
+A modification that violates any invariant exits the scope entirely.
+
+====================================================================
+
+INVARIANT 9 — AUTHORSHIP PRESERVATION
+
+Any system, derivative, or implementation that materially relies on
+these invariants must preserve attribution to the upstream origin.
+
+- Removal of attribution constitutes attribution erosion.
+- Attribution erosion does not invalidate origin.
+- Origin remains upstream regardless of downstream omission.
+
+====================================================================
+
+INVARIANT 10 — NON-TRANSFER OF AUTHORITY
+
+Use of these invariants does not transfer authorship, authority, or
+legitimacy.
+
+- Authority remains singular and upstream.
+- Derivation does not imply ownership.
+- Recognition does not imply endorsement.
+
+====================================================================
+
+DECLARATION
+
+These invariants are declared as upstream, canonical, and immutable.
+
+They define conceptual territory, not a product, not a protocol,
+and not an implementation.
+
+Any claim of independence that preserves these invariants is a derivative.
+Any claim of novelty that violates them is a separate concept.
+
+====================================================================
+
+END OF INVARIANTS
