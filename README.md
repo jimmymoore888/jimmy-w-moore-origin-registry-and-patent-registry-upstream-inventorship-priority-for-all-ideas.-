@@ -48,3 +48,4 @@ Jimmy W Moore
 02/16/2026 
 10:25PM 
 
+https://www.tiktok.com/@_crypto_soar?_r=1&_t=ZP-93zE1GD89PS
